@@ -1,0 +1,33 @@
+Part - 1 (BCD to 7 segment) :
+It is used in digital displays to express a BCD number by lighting required LEDs so that number can be seen
+<Truth table>
+From the above truth table, we can easily use SOP for each of a,b,c,d,e,f,g in terms of A,B,C,D and use reduction by K-maps to arrive at the final formulae and circuit diagram:
+<Write all formulae of a,b,c,d,e,f,g>
+<Circuit diagram>
+
+Part - 2 (3 bit decoder) :
+It is a device that takes in k bits (labelled 0 to k-1) as inputs and has 2 ^ k (labelled 0 to 2^k-1) lines. For each combination of the k input bits, exactly 1 of the output lines,
+(the line that represents the combination of the input bits) is high, rest all are low.
+It can be easily realised using multiple 1-bit decoders
+<Truth Table>
+<Circuit diagram>
+
+Part - 3 (ECC parity generator) :
+When we try to transmit a particular set of bits across a distance, then some of those bits might get flipped accidentally, and the receiver might read the wrong outputs.
+Lets say we transmit 4 bits D1,D2,D3,D4. The ECC parity generator takes in these 4 inputs and outputs 3 parity bits as follows :
+<Write formulae of P1 P2 P3>
+<NO truth table>
+<Circuit diagram>
+
+Part - 4 (ECC) :
+<In continuation of part 3>
+Now, on the receiver end, we recalculate the parity bits. Assuming atmost 1 bit is wrong (this is very important), we check which of the received and recalculated bits differ in value.
+Depending on that, we correct the bits.
+<NO truth table>
+<Circuit diagram>
+
+Part - 5 (Final) :
+<Summary of the total concept>
+<Circuit diagram is simply the screenshot>
+User Manual (how to introduce errors ? ) :
+<Excel sheet showing which combination is mapped to which error>
